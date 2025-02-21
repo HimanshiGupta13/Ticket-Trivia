@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monument Ticket Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Travel Trivia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#monuments">Monuments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Head Section -->
+    <header class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            
+            <h1 class="display-4">Discover and Book Tickets for World-Famous Monuments</h1>
+            <p class="lead">Skip the lines and secure your spot at the most iconic landmarks around the world.</p>
+            <a href="#monuments" class="btn btn-primary">Book Now</a>
+        </div>
+    </header>
+
+    <!--The Search Bar -->
+    <section class="search-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search for monuments..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Some Featured Monuments -->
+    <section id="monuments" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Monuments</h2>
+            <div class="row">
+                <!-- Monument A -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Taj Mahal</h5>
+                            <p class="card-text">Visit one of the Seven Wonders of the World, an iconic symbol of love and beauty.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Monument B -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/df/bc/15.jpg" class="card-img-top" alt="imgg">
+                        <div class="card-body">
+                            <h5 class="card-title">National Museum</h5>
+                            <p class="card-text">The National Museum has nearly 17,000 paintings representing indian styles of paintings.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Monument C -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LiYKg-obKZwAhb65OC-x947yy0ftQwK5sA&s" class="card-img-top" alt="raill">
+                        <div class="card-body">
+                            <h5 class="card-title">Rail Museum</h5>
+                            <p class="card-text">It was set up as the first ever Transport Museum in India and was named as “Rail Transport Museum”(RTM).</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5 bg-light">
+      
+        <div class="container text-center ">
+            <h2>About Us</h2>
+            <p>At Travel Trivia, we aim to provide a seamless ticket booking experience for the most famous monuments and museums worldwide. Our platform allows you to secure your entry with just a few clicks.We strive to make finding and purchasing tickets effortless, allowing you to focus on enjoying the experience.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="text-center py-4 bg-dark text-light">
+        <p>&copy; 2024 Travel Trivia. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

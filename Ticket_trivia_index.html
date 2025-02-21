@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <link rel="stylesheet" href="sstyle.css">
+</head>
+<body>
+    <img class="bg" src="bg.jpg" alt="indian culture" srcset="">
+<div class="container">
+<h1><b>Welcome to Culture and Heritage Drive !</b></h1>
+<br>
+<p class="para">Share your travelogues and experiences with us to participate</p><br>
+
+<p class="submit"><b>Your response has been recorded. Thank you for your participation! </b></p>
+
+<form action="index.php" method="post">
+    <input type="text" name="Name" id="Name" placeholder="Enter your name">
+    <input type="text" name="State" id="State" placeholder="Enter your state">
+    <input type="text" name="City" id="City" placeholder="Enter your city">
+    
+    <textarea name="Description" id="Description" cols="100" rows="10" placeholder="Describe here"></textarea>
+    <input type="url" name="link" id="link" placeholder="Enter Google Drive link of photo or video (optional) ">
+    <br>
+    
+    <button class="btn">SUBMIT</button>
+
+
+</form>
+
+</div> 
+<script src="index.js"></script>
+<!--INSERT INTO `form` (`S.no`, `Name`, `State`, `City`, `Description`, `Link`, `Date`) VALUES ('1', 'jjjj', 'jjj', 'jjj', 'jjjjjj', 'jjjj', current_timestamp());-->
+</body>
+</html>
